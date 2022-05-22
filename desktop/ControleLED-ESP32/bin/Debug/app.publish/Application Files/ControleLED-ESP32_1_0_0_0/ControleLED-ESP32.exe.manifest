@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ControleLED-ESP32.exe" version="1.0.0.0" publicKeyToken="7136ad1310e04cdd" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ControleLED-ESP32" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ControleLED-ESP32.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opções de Manifesto UAC
+          Se desejar mudar o nível de Controle de Conta de Usuário do Windows, substitua o 
+          nó requestedExecutionLevel por um dos seguintes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Se deseja usar a Virtualização de Arquivos e Registro para compatibilidade 
+         com versões anteriores, exclua o nó requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ControleLED-ESP32.exe" size="16296">
+      <assemblyIdentity name="ControleLED-ESP32" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qSVV4wNmYarEkD5OJ3I4dSSA6taRdqz+7BwY939ca/U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FireSharp.dll" size="20480">
+      <assemblyIdentity name="FireSharp" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SlU4e3nXdnSonb86WtvZlKJZTsPF6CnO5yvk9TiAEoY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FireSharp.Serialization.JsonNet.dll" size="6656">
+      <assemblyIdentity name="FireSharp.Serialization.JsonNet" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>v8tHuqNvLE/KR9oC1YREKMVtWwyOjkAKyFsCxUwliHQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="502272">
+      <assemblyIdentity name="Newtonsoft.Json" version="6.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Dt+sa+EXMt3ZnbZoIe5HQIwtwem+1o5e+ajhMMVlt5s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RestSharp.dll" size="160256">
+      <assemblyIdentity name="RestSharp" version="104.4.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ee8FzYT4q3y+T8k3J+KqNq3KsAJmHmoUw5V7fysi5cs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ControleLED-ESP32.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LERSON\zonej" issuerKeyHash="3bfc4eca924571eb4c0da1c0b6cfffbfff6ad3de" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>V5/NNMBTsIyWez44b+YrIuiDExSVL8m36TA6kxDwefM=</DigestValue></Reference></SignedInfo><SignatureValue>3OYV3ynB1oJFkSxhCqy/pMPIf3Mq5ooPy/C0wpP5/17aysy6lPgo0Iphjhw6DqthkoDhcroJdFgGn9KzX5BY5gjWeJHsB5EarCQQZkAp55RYk1P6yCbPeHg0igftJzW97pumgh6jVRgKi9FcPBFBWQq18XKxIourLxmoXa61Nc0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>3q2w+LVxcPFFS34J4rnv9nnDu/0vpq8BNSNtPft24Ml1O10adpbkJfMtn+Tfitm3xFtiz6BfI3M9+mMi9b/XXcIHShUX7Wr+7BzLEAEi/epRWjgpFaLUnFAiBSYw5cD4vIO/fAMMDeYfPpDZn2kJ4RMGByzef60FCVt30vELPqU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f379f010933a30e9b7c92f95141383e8222be66f383e7b968cb053c034cd9f57" Description="" Url=""><as:assemblyIdentity name="ControleLED-ESP32.exe" version="1.0.0.0" publicKeyToken="7136ad1310e04cdd" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LERSON\zonej</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>DC8E/CYCggNjnok/o3eIYgd8R0vcixuEDw18tWENFfk=</DigestValue></Reference></SignedInfo><SignatureValue>OzIvZOCRLJGhABi8NJvKy07P1mLDVwsRSNixX4yrAWOoXGLHF8LYRWObnhl4fzdhJhEFOsnsigC++EDitQnz0j7KK9vvFQqpMUizG5FsvJRngD3CHQZmmiesPhOvYVbqsTT/ELKbfI5npV9oNElKDAUH1pF6h0Xy8HuXebe0WEo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>3q2w+LVxcPFFS34J4rnv9nnDu/0vpq8BNSNtPft24Ml1O10adpbkJfMtn+Tfitm3xFtiz6BfI3M9+mMi9b/XXcIHShUX7Wr+7BzLEAEi/epRWjgpFaLUnFAiBSYw5cD4vIO/fAMMDeYfPpDZn2kJ4RMGByzef60FCVt30vELPqU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQF3b6DPlQQrxJqKbziO/gHTANBgkqhkiG9w0BAQsFADAjMSEwHwYDVQQDHhgATABFAFIAUwBPAE4AXAB6AG8AbgBlAGowHhcNMjIwNDI0MDAzMjI5WhcNMjMwNDI0MDYzMjI5WjAjMSEwHwYDVQQDHhgATABFAFIAUwBPAE4AXAB6AG8AbgBlAGowgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAN6tsPi1cXDxRUt+CeK57/Z5w7v9L6avATUjbT37duDJdTtdGnaW5CXzLZ/k34rZt8RbYs+gXyNzPfpjIvW/113CB0oVF+1q/uwcyxABIv3qUVo4KRWi1JxQIgUmMOXA+LyDv3wDDA3mHz6Q2Z9pCeETBgcs3n+tBQlbd9LxCz6lAgMBAAEwDQYJKoZIhvcNAQELBQADgYEADpTTs3ut+1vUyeucK5YoSYfqgQiJnTioFtYsFec6XYZVbBB1PkjombSUXCl2QWYOoubZ8x+WONhJLLl1F6giJ3b9YLP154XPoUxIitv1JjUmdXm37JPUGl9WsD/8tIGVtOYXkxDE8df1LzuuYawLyDs/NFwIYfn7uATEv5uTFno=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
